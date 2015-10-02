@@ -2,7 +2,7 @@
 
 make run
 
-## Results for laptop (8 cores)
+## Results for laptop (4 cores)
 
 Simple inc 300
 6442
