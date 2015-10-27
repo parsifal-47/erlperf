@@ -13,6 +13,6 @@ get_result(Iter, T) ->
 
 out(Iterate, Text, T) ->
     io:format("~s ~p~n", [Text, T]),
-    lists:map(fun(_) -> io:format("~p~n", [get_result(Iterate, T)]) end, lists:seq(1, 20)).
+    lists:map(fun(_) -> io:format("~p~n", [get_result(Iterate, T)]) end, lists:seq(1, 200)).
 
 run_series(Iterate, Pre, Post, Text, Numbers) -> lists:map(fun(X) -> Pre(), out(Iterate, Text, X), Post() end, Numbers).
